@@ -1,0 +1,374 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>CENTURY 21 Bricks Caracas </title>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<style type="text/css">
+	  body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+		background: url(img/slides/ofrecer.jpg) top center;
+		background-repeat: no-repeat;
+		background-size: auto 575px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+
+	  .hero-yellow
+	{
+		background-color: rgba(63, 63, 63, 0.5);
+		border: 1px solid #030303;
+		color:white;
+		padding:20px 40px !important;
+
+	}
+
+	.hero-yellow .add-on
+	{
+		color:black;
+	}
+	
+	.hero-yellow h2
+	{
+		text-shadow: 1px 1px 0 #000;
+		margin-bottom:0px;
+	}
+ 	</style>
+</head>
+ 
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+	  	<span class="icon-bar">&nbsp; </span>
+		<span class="icon-bar">&nbsp; </span>
+		<span class="icon-bar">&nbsp; </span>
+	  </button>
+	  <a class="brand" href="/" style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px">
+	  	<img src="img/logo-small.png">
+	  </a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/">Inicio </a>
+          <li><a href="#about">Ofrecer Inmueble </a>
+          <li><a href="nosotros.php">Nosotros </a>
+          <li><a href="contacto.php">Contacto </a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+<div class="container">
+
+<form class="form-inline" id="contacto" method="GET">
+
+<div class="row">
+    <div class="span7">
+        <div class="hero-unit hero-yellow">
+			<h2>Vende o alquila tu inmueble facilito</h2>
+            <input id="tipo_inmueble" type="hidden" value="Apartamento" name="tipo_inmueble">
+            <input id="tipo_negocio" type="hidden" value="Vender" name="tipo_negocio">
+            <div class="control-group">
+                <br>
+                <div id="negocio" class="btn-group" data-toggle="buttons-radio" data-toggle-name="tipo_negocio">
+                    <button class="btn btn-inverse" value="Vender">Vender</button>
+                    <button class="btn btn-inverse" value="Alquilar">Alquilar</button>
+                </div>
+
+                <div id="tipo" class="btn-group" data-toggle-name="tipo_inmueble">
+                    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">Apartamento <span class="caret">&nbsp;</span></a> 
+                    <ul class="dropdown-menu">
+
+<!-- BEGIN Grid vw_tipos_inmuebles -->
+<!-- BEGIN Row -->
+<li><a href="#" tabindex="-1" value="{tipo_inmueble1}">{tipo_inmueble}</a></li>
+ <!-- END Row --><!-- END Grid vw_tipos_inmuebles -->
+
+                    </ul>
+
+                </div>
+                <input id="zona" style="HEIGHT: 30px; MARGIN-LEFT: 5px" name="zona" placeholder="Zona / Urbanización" data-provide="typeahead" autocomplete="off">
+            </div>
+
+            <div class="control-group">
+                <input id="habitaciones" class="input-medium" style="HEIGHT: 30px" name="habitaciones" placeholder="Habitaciones">
+                <input id="banos" class="input-medium" style="HEIGHT: 30px" name="banos" placeholder="Baños">
+                <input id="estacionamientos" class="input-medium" style="HEIGHT: 30px" name="estacionamientos" placeholder="Estacionamientos">
+            </div>
+
+            <div class="control-group">
+
+                <div class="input-append">
+                    <input id="appendedInput" class="input-small" placeholder="Construcción" style="HEIGHT: 30px" name="metros_construccion"><span class="add-on">m²</span> 
+                </div>
+
+                <div class="input-append">
+                    <input id="appendedInput" class="input-small" placeholder="Terreno" style="HEIGHT: 30px" name="metros_terreno"><span class="add-on">m²</span> 
+                </div>
+
+				<div class="input-prepend">
+                    <span class="add-on">Bs.</span>
+                    <input id="appendedInput" placeholder="Precio" class="money" style="HEIGHT: 30px; TEXT-ALIGN: right" name="precio">
+                </div>
+
+            </div>
+
+			<div class="control-group">
+				Contacto:
+                <br>
+                <input id="appendedInput" class="input-medium" style="HEIGHT: 30px" name="nombre" placeholder="Nombre y Apellido">
+                <input id="appendedInput" class="input-medium" style="HEIGHT: 30px" name="email" placeholder="Email">
+                <input id="appendedInput" class="input-medium" style="HEIGHT: 30px" name="telefono" placeholder="Teléfono">
+            </div>
+
+            <div class="control-group">
+                Observaciones:
+                <br>
+                <textarea rows="4" style="width:590px" name="observaciones"></textarea>
+
+            </div>
+			
+			<p style="text-align:right">
+				<a href="#" id="btn_buscar" class="btn btn-warning btn-large"><i class="icon-envelope icon-white"></i> Enviar Solicitud</a>
+			</p>
+
+        </div>
+    </div>
+</div>
+
+</form>
+    <div class="row" style="margin-top:20px">
+  <div class="span4">
+    <h2>Nuevas Ofertas</h2>
+    <!-- BEGIN Grid ofertas_propiedades -->
+    <!-- BEGIN Row -->
+    <div class="media">
+<a href="inmueble.php?p={codigo}" class="pull-left thumbnail"><img class="media-object" alt="96x72" style="width: 96px; height: 72px;" src="http://200.74.221.42/getmedia.asp?THUMB=TRUE&id={media}"></a>
+      <div class="media-body">
+        <h4 class="media-heading">Bs. {precio}</h4>
+        <span class="label label-info">{tipo_inmueble} en {tipo_negocio}</span><br />
+        {ciudad}, {urbanizacion} <br />
+        {habitaciones} Habitaciones, {banos} Baños, {estacionamientos} Puestos
+      </div>
+    </div>
+ <!-- END Row -->
+    <!-- BEGIN Separator -->
+    <hr /><!-- END Separator -->
+    <!-- BEGIN NoRecords -->
+    <div>
+      No hay ofertas de momento
+    </div>
+ <!-- END NoRecords --><!-- END Grid ofertas_propiedades -->
+  </div>
+  <div class="span4">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+ 
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+ 
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+ 
+      </ol>
+ 
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a target="_blank" href="http://rbenitez.c21-email.com/media/id/1273770/"><img src="img/banners/Slide1.JPG" alt="..."></a>
+        </div>
+ 
+        <div class="item">
+          <img src="img/banners/Slide2.JPG" alt="...">
+        </div>
+ 
+        <div class="item">
+          <img src="img/banners/Slide3.JPG" alt="...">
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+  <div class="span4">
+    <div class="row">
+      <div class="span2">
+<a href="propiedades.php?tipo_inmueble=Apartamento&tipo_negocio=Venta&precio_1=65000000&precio_2=" class="thumbnail"><img alt="160x120" src="img/banners/century21-luxury.jpg"></a>
+      </div>
+      <div class="span2">
+<a href="propiedades.php?comercial=1" class="thumbnail"><img alt="160x120" src="img/banners/century21-comercialindustrial.jpg"></a>
+      </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+      <div class="span4">
+<a href="http://www.ricardobenitez.com/" target="_blank" class="thumbnail"><img alt="160x120" src="img/banners/ricardobenitez.com.jpg"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<footer>
+<p>© CENTURY 21 Bricks Caracas 2013 - Desarrollado por <a href="http://www.clicksolutions.com.ve">Click Solutions</a></p>
+ </footer>
+</div>
+
+ 
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/jquery.numeric.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/load-image.js"></script>
+  <script src="js/bootstrap-image-gallery.min.js"></script>
+  <script>
+       $(function () {
+
+	  		 $('#zona').typeahead({
+			    source: function (query, process) {
+			        return $.get('/services/zonas.php', { query: query }, function (data) {
+			            return process(data.options);
+			        });
+			    },
+				minLength:3
+			});
+
+		  $("#btn_buscar").click(function(){$("#contacto").submit()})
+
+          $('#myCarousel .item:first-child').addClass("active")
+		  
+		  $('#myCarousel').carousel({
+              interval: 10000
+          });
+
+          $(".numeric").numeric({
+              decimal: false
+          });
+
+          $('.money').mask('000.000.000.000.000', {
+              reverse: true
+          });
+
+		  $('#contacto').on("submit",function(){
+		  	$.ajax({
+				url:"services/ofrecer_propiedad.php",
+				data:$(this).serialize(),
+				success:function(data){
+					alert("Su mensaje fue enviado, espere una pronta respuesta de nuestro equipo.")
+				}
+			})
+		  	return false;
+		  });
+
+          $('a[rel=popover]').popover({
+              html: 'true',
+              placement: 'bottom',
+              title: 'Búsqueda',
+              content: function () {
+                  return $("#" + $(this).attr("data-content-id")).html();
+              }
+          });
+
+          $(".btn-group[data-toggle-name], .btn-group[data-toggle-id], .dropdown[data-toggle-name], .dropdown[data-toggle-id]").each(function () {
+
+              var group = $(this);
+              var form = group.parents('form').eq(0);
+              var name = group.attr('data-toggle-name');
+              var hidden = "";
+              if (name != undefined & name != "")
+                  hidden = $('input[name="' + name + '"]', form);
+              else {
+                  name = group.attr('data-toggle-id');
+                  hidden = $('input[id="' + name + '"]');
+                  form = hidden.parents('form').eq(0);
+              }
+
+              $('button', group).each(function (index) {
+
+                  var button = $(this);
+
+                  button.click(function () {
+                      hidden.val($(this).val());
+                  });
+
+                  if (button.val() == hidden.val()) {
+                      button.addClass('active');
+                  }
+
+              });
+
+              $(".dropdown-menu li a", group).each(function () {
+
+                  var item = $(this);
+                  var toggle = group.find('.dropdown-toggle');
+                  var label = group.attr('data-toggle-label');
+                  var sufix = group.attr('data-toggle-sufix');
+                  sufix = (sufix != undefined) ? sufix : '';
+                  var toogleMode = group.attr('data-toggle-show-text');
+                  toogleMode = (toogleMode != "") ? eval("toogleMode=" + toogleMode) : false;
+                  var autopostback = group.attr('data-toggle-autopostback');
+                  autopostback = (autopostback != "") ? eval("autopostback=" + autopostback) : false;
+
+                  if (item.attr('value') == hidden.val() & hidden.val() != "") {
+
+                      item.parent().addClass("disabled");
+
+                      if (!toogleMode) {
+                          if (hidden.val() != "")
+                              toggle.html(hidden.val() + ' ' + sufix + ' <span class="caret"></span>');
+                          else
+                              toggle.html(label + ' <span class="caret"></span>');
+                      } else {
+                          toggle.html($(this).html() + ' <span class="caret"></span>');
+                      }
+                  } else {
+                      item.click(function () {
+                          hidden.val($(this).attr('value'));
+                          if (!toogleMode) {
+                              if (hidden.val() != "")
+                                  toggle.html(hidden.val() + ' ' + sufix + ' <span class="caret"></span>');
+                              else
+                                  toggle.html(label + ' <span class="caret"></span>');
+                          } else {
+                              toggle.html($(this).html() + ' <span class="caret"></span>');
+                          }
+
+                          if (autopostback) {
+                              form.submit();
+                          }
+
+                      });
+                  }
+
+              });
+
+          });
+      });
+  	</script>
+	<div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+	    <div class="modal-header">
+	        <a class="close" data-dismiss="modal">&times;</a>
+	        <h3 class="modal-title"></h3>
+	    </div>
+	    <div class="modal-body"><div class="modal-image"></div></div>
+	    <div class="modal-footer">
+			<a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Anterior</a>
+			<a class="btn btn-primary modal-next">Siquiente <i class="icon-arrow-right icon-white"></i></a>
+			<a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Presentación</a>
+	    </div>
+	</div>
+  </body>
+  </html>

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CENTURY 21 Bricks Caracas</title>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<script>
+    $(function(){
+	   $("img").error(function () {
+			$(this).attr("src", "img/propiedad-no-imagen.jpg");
+		});
+    });
+</script>
+
+<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style></head>
+ 
+<body>
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		  <a class="brand" style="padding:5px 10px"><img src="img/logo-small.png"/></a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">Username</a>
+            </p>
+            <ul class="nav">
+              	<li><a href="/">Inicio</a></li>
+	            <li><a href="#about">Ofrecer Inmueble</a></li>
+	            <li><a href="#contact">Nosotros</a></li>
+				<li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+	<div class="container">
+		<div class="row">
+	        <div class="span3">
+	          <div class="well sidebar-nav" style="margin-top">
+	            <ul class="nav nav-list">
+	              <li><h4>Búsqueda</h4></li>
+	              <li>
+				  	<form class="form-horizontal">
+						<div class="control-group">
+						  	<div class="btn-group" data-toggle="buttons-radio">
+							  <button type="button" class="btn active">Comprar</button>
+							  <button type="button" class="btn">Alquilar</button>
+							</div>
+						</div>
+						<div class="control-group">
+						  	<div class="btn-group">
+							  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							    Apartamento
+							    <span class="caret"></span>
+							  </a>
+							  <ul class="dropdown-menu">
+								<li><a tabindex="-1" href="#">Apartamento</a></li>
+							    <li><a tabindex="-1" href="#">Casa</a></li>
+								<li><a tabindex="-1" href="#">Oficina</a></li>
+							  </ul>
+							</div>
+						</div>
+						<div class="control-group">
+							<input class="input-medium" type="text" id="zona" name="zona" autocomplete="off" data-provide="typeahead" placeholder="Zona / Urbanización">
+						</div>
+						<hr />
+						<div class="control-group">
+						  	<div class="btn-group">
+							  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							  	Habitaciones
+							    <span class="caret"></span>
+							  </a>
+							  <ul class="dropdown-menu">
+							  	<li><a tabindex="-1" href="#">Habitaciones</a></li>
+							    <li><a tabindex="-1" href="#">1 Habitación</a></li>
+								<li><a tabindex="-1" href="#">2 Habitaciones</a></li>
+								<li><a tabindex="-1" href="#">3 Habitaciones</a></li>
+								<li><a tabindex="-1" href="#">4 Habitaciones</a></li>
+								<li><a tabindex="-1" href="#">5+ Habitaciones</a></li>
+							  </ul>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="btn-group">
+							  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							  	Baños
+							    <span class="caret"></span>
+							  </a>
+							  <ul class="dropdown-menu">
+							  	<li><a tabindex="-1" href="#">Baños</a></li>
+							    <li><a tabindex="-1" href="#">1 Baño</a></li>
+								<li><a tabindex="-1" href="#">2 Baños</a></li>
+								<li><a tabindex="-1" href="#">3 Baños</a></li>
+								<li><a tabindex="-1" href="#">4+ Baños</a></li>
+							  </ul>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="btn-group">
+							  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							  	Estacionamiento
+							    <span class="caret"></span>
+							  </a>
+							  <ul class="dropdown-menu">
+							  	<li><a tabindex="-1" href="#">Estacionamiento</a></li>
+							  	<li><a tabindex="-1" href="#">1 Puesto</a></li>
+								<li><a tabindex="-1" href="#">2 Puestos</a></li>
+								<li><a tabindex="-1" href="#">3+ Puestos</a></li>
+							  </ul>
+							</div>
+						</div>
+						<hr />
+						<div class="control-group">
+							<div class="input-append">
+							  <input class="input-small" id="appendedInput" type="text" placeholder="Construcción">
+							  <span class="add-on">m²+</span>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="input-append">
+							  <input class="input-small" id="appendedInput2" type="text" placeholder="Terreno">
+							  <span class="add-on">m²+</span>
+							</div>
+						</div>
+					</form>
+				  </li>
+	            </ul>
+	          </div><!--/.well -->
+	        </div><!--/span-->
+
+
+<!-- BEGIN Grid propiedades -->
+			<div class="span9">
+			<div class="row-fluid">
+<!-- BEGIN Row -->
+	<!-- BEGIN Panel RowOpenTag -->
+				<ul class="thumbnails">
+	<!-- END Panel RowOpenTag -->
+
+					<li class="span3">
+						<div class="thumbnail">
+							<a href="#"><img alt="300x200" src="http://200.74.221.42/getmedia.asp?id={media}"></a> 
+						  <div class="caption">
+						    <h4>Bs {precio}</h4>
+						 	<span class="label label-info">{tipo_inmueble} en {tipo_negocio}</span>
+						    <div title="{ciudad1}, {urbanizacion1}" style="margin-top:5px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;outline: 0!important;">
+						      {ciudad}, {urbanizacion}
+						    </div>
+						    {habitaciones} Hab. {banos} Bañ. {estacionamientos} Est. 
+						    <p style="margin-top:10px"><a href="#" class="btn btn-primary btn-small">Detalle</a></p>
+ 
+						  </div>
+						</div>
+					</li>
+
+
+	<!-- BEGIN Panel RowCloseTag -->
+				</ul>
+	<!-- END Panel RowCloseTag -->
+ <!-- END Row -->
+ <!-- BEGIN NoRecords -->
+				<div>
+			  	  No hay ofertas de momento
+				</div>
+ <!-- END NoRecords -->
+ 			</div>
+			</div>
+<!-- END Grid propiedades -->
+
+		</div>
+	</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/jquery.numeric.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+		$('#zona').typeahead({
+		    source: function (query, process) {
+		        return $.get('/services/zonas.php', { query: query }, function (data) {
+		            return process(data.options);
+		        });
+		    },
+			minLength:3
+		});
+		$(".dropdown-menu li a").click(function(){
+		  
+	      $(this).parent().parent().parent().find(".btn:first-child").html($(this).text()+' <span class="caret"></span>');
+	      $(this).parent().parent().parent().find(".btn:first-child").val($(this).text());
+
+	   });
+
+	   $(".numeric").numeric({ decimal: false})
+    });
+</script>
+
+</body>
+</html>

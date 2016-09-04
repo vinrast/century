@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>CENTURY 21 Bricks Caracas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include Common JSFunctions @1-D3B5F5BF
+</script>
+<script language="JavaScript" src="ClientI18N.php?file=Functions.js&amp;locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//bind_events @1-BF0EB765
+function bind_events() {
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+<!-- BEGIN Record propiedadesSearch -->
+<form id="propiedadesSearch" method="post" name="{HTMLFormName}" action="{Action}">
+  <h2>Propiedades Buscar</h2>
+  <table>
+    <!-- BEGIN Error -->
+    <tr>
+      <td colspan="2">{Error}</td>
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <th>Habitaciones</th>
+ 
+      <td><input id="propiedadesSearchs_habitaciones" maxlength="12" size="12" value="{s_habitaciones}" name="{s_habitaciones_Name}"></td>
+    </tr>
+ 
+    <tr>
+      <th>Banos</th>
+ 
+      <td><input id="propiedadesSearchs_banos" maxlength="12" size="12" value="{s_banos}" name="{s_banos_Name}"></td>
+    </tr>
+ 
+    <tr>
+      <th>Tipo Inmueble</th>
+ 
+      <td>
+        <select id="propiedadesSearchs_tipo_inmueble" name="{s_tipo_inmueble_Name}">
+          <option selected value="">Seleccionar Valor</option>
+          {s_tipo_inmueble_Options}
+        </select>
+ </td>
+    </tr>
+ 
+    <tr>
+      <th>Tipo Negocio</th>
+ 
+      <td>
+        <select id="propiedadesSearchs_tipo_negocio" name="{s_tipo_negocio_Name}">
+          <option selected value="">Seleccionar Valor</option>
+          {s_tipo_negocio_Options}
+        </select>
+ </td>
+    </tr>
+ 
+    <tr>
+      <th>Ordenar por</th>
+ 
+      <td>
+        <select id="propiedadesSearchpropiedades1DirOrder" name="propiedades1Order">
+          {propiedades1Order_Options}
+        </select>
+ 
+        <select id="propiedadesSearchpropiedades1DirDir" name="propiedades1Dir">
+          {propiedades1Dir_Options}
+        </select>
+ </td>
+    </tr>
+ 
+    <tr>
+      <td><a href="{ClearParameters_Src}" id="propiedadesSearchClearParameters">Limpiar</a></td> 
+      <td align="right">
+        <!-- BEGIN Button Button_DoSearch --><input id="propiedadesSearchButton_DoSearch" type="submit" value="Buscar" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+    </tr>
+  </table>
+</form>
+<!-- END Record propiedadesSearch --><br>
+<!-- BEGIN Grid propiedades1 -->
+<h2>Propiedades Lista de</h2>
+<table>
+  <tr>
+    <th>
+    <!-- BEGIN Sorter Sorter_id_mls --><a href="{Sort_URL}" id="propiedades1Sorter_id_mls"><u>Id Mls</u></a> 
+    <!-- BEGIN Asc_On --><img border="0" src="Styles/None/Images/Asc.gif"><!-- END Asc_On -->
+    <!-- BEGIN Desc_On --><img border="0" src="Styles/None/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_id_mls --></th>
+ 
+    <th>
+    <!-- BEGIN Sorter Sorter_tipo_inmueble --><a href="{Sort_URL}" id="propiedades1Sorter_tipo_inmueble"><u>Tipo Inmueble</u></a> 
+    <!-- BEGIN Asc_On --><img border="0" src="Styles/None/Images/Asc.gif"><!-- END Asc_On -->
+    <!-- BEGIN Desc_On --><img border="0" src="Styles/None/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_tipo_inmueble --></th>
+ 
+    <th>
+    <!-- BEGIN Sorter Sorter_tipo_negocio --><a href="{Sort_URL}" id="propiedades1Sorter_tipo_negocio"><u>Tipo Negocio</u></a> 
+    <!-- BEGIN Asc_On --><img border="0" src="Styles/None/Images/Asc.gif"><!-- END Asc_On -->
+    <!-- BEGIN Desc_On --><img border="0" src="Styles/None/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_tipo_negocio --></th>
+  </tr>
+ 
+  <!-- BEGIN Row -->
+  <tr>
+    <td style="TEXT-ALIGN: right">{id_mls}&nbsp;</td> 
+    <td>{tipo_inmueble}&nbsp;</td> 
+    <td>{tipo_negocio}&nbsp;</td>
+  </tr>
+ <!-- END Row -->
+  <!-- BEGIN NoRecords -->
+  <tr>
+    <td colspan="3">No hay registros</td>
+  </tr>
+  <!-- END NoRecords -->
+  <tr>
+    <td colspan="3">
+      <!-- BEGIN Navigator Navigator -->
+      <!-- BEGIN Page_Parameter --><input type="hidden" value="{Value}" name="{Name}"><!-- END Page_Parameter -->Per page: 
+      <select onchange="CCChangeSize(this, '{FormName}')" name="{FormName}PageSize">
+        <option selected value="">-</option>
+ {PageSize_Options}
+      </select>
+ 
+      <!-- BEGIN First_On --><a href="{First_URL}"><u>Inicio</u></a> <!-- END First_On -->
+      <!-- BEGIN First_Off -->Inicio <!-- END First_Off -->
+      <!-- BEGIN Prev_On --><a href="{Prev_URL}"><u>Anterior</u></a> <!-- END Prev_On -->
+      <!-- BEGIN Prev_Off -->Anterior <!-- END Prev_Off -->&nbsp; 
+      <!-- BEGIN Pages -->
+      <!-- BEGIN Page_On --><a href="{Page_URL}"><u>{Page_Number}</u></a>&nbsp;<!-- END Page_On -->
+      <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->de &nbsp;{Total_Pages}&nbsp; 
+      <!-- BEGIN Next_On --><a href="{Next_URL}"><u>Siguiente</u></a> <!-- END Next_On -->
+      <!-- BEGIN Next_Off -->Siguiente <!-- END Next_Off -->
+      <!-- BEGIN Last_On --><a href="{Last_URL}"><u>Final</u></a> <!-- END Last_On -->
+      <!-- BEGIN Last_Off -->Final <!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp;</td>
+  </tr>
+</table>
+<!-- END Grid propiedades1 --><br>
+</body>
+</html>

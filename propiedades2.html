@@ -1,0 +1,193 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>CENTURY 21 Bricks Caracas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+    $(function(){
+           $("img").error(function () {
+                        $(this).attr("src", "img/propiedad-no-imagen.jpg");
+                });
+    });
+</script>
+<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style></head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"><span class="icon-bar">&nbsp;</span><span class="icon-bar">&nbsp;</span><span class="icon-bar">&nbsp;</span></button> <a class="brand" style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px"><img src="img/logo-small.png"></a> 
+      <div class="nav-collapse collapse">
+        <p class="navbar-text pull-right">Logged in as <a href="#" class="navbar-link">Username</a> </p>
+        <ul class="nav">
+          <li><a href="/">Inicio</a> 
+          <li><a href="#about">Ofrecer Inmueble</a> 
+          <li><a href="#contact">Nosotros</a> 
+          <li><a href="#contact">Contacto</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+<div class="container">
+    <!-- BEGIN Grid vw_propiedades_caracas -->
+    <div class="row">
+      
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+              <ul class="nav">
+                <li><a href="#" rel="popover" data-content-id="filtro">Filtro de Búsqueda</a></li>
+				<li class="divider-vertical"></li>
+              </ul>
+			  
+				<!-- BEGIN Navigator Navigator1 -->
+				<!-- BEGIN Page_Parameter --><input type="hidden" value="{Value}" name="{Name}"><!-- END Page_Parameter -->
+				<div class="pagination nav" style="margin:5px auto">
+				  <ul>
+				    <!-- BEGIN First_On -->
+				    <li><a href="{First_URL}">«</a><!-- END First_On -->
+				    <!-- BEGIN First_Off -->
+				    <li class="disabled"><a href="#">«</a><!-- END First_Off -->
+				    <!-- BEGIN Prev_On -->
+				    <li><a href="{Prev_URL}">‹</a> <!-- END Prev_On -->
+				    <!-- BEGIN Prev_Off -->
+				    <li class="disabled"><a href="#">‹</a> <!-- END Prev_Off -->
+				    <!-- BEGIN Pages -->
+				    <!-- BEGIN Page_On -->
+				    <li><a href="{Page_URL}">{Page_Number}</a> <!-- END Page_On -->
+				    <!-- BEGIN Page_Off -->
+				    <li class="active"><a href="#">{Page_Number}</a> <!-- END Page_Off -->
+					<!-- END Pages -->
+				    <li class="active"><a href="#">de &nbsp;{Total_Pages}</a> 
+				    <!-- BEGIN Next_On -->
+				    <li><a href="{Next_URL}">›</a> <!-- END Next_On -->
+				    <!-- BEGIN Next_Off -->
+				    <li class="disabled"><a href="#">›</a> <!-- END Next_Off -->
+				    <!-- BEGIN Last_On -->
+				    <li><a href="{Last_URL}">»</a><!-- END Last_On -->
+				    <!-- BEGIN Last_Off -->
+				    <li class="disabled"><a href="#">»</a><!-- END Last_Off --></li>
+ 
+				  </ul>
+				</div>
+				 <!-- END Navigator Navigator1 -->
+			  <ul class="nav pull-right">
+                  <li class="divider-vertical"></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Más reciente <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Más reciente</a></li>
+					  <li class="divider"></li>
+                      <li><a href="#">Mayor Precio</a></li>
+                      <li><a href="#">Menor Precio</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+            <!-- /.nav-collapse -->
+          </div>
+        </div>
+        <!-- /navbar-inner -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="span12" style="MARGIN-LEFT: 15px">
+        <div class="row-fluid">
+          <!-- BEGIN Row -->
+          <!-- BEGIN Panel RowOpenTag -->
+          <ul class="thumbnails">
+            <!-- END Panel RowOpenTag -->
+            <!-- BEGIN Panel RowComponents -->
+            <li class="span2">
+            <div class="thumbnail">
+			  <a href="#">
+			  	<img alt="300x200" onload="if(this.alt!='Sin Foto'){this.src='http://200.74.221.42/getmedia.asp?id={media}'}" onerror="this.alt='Sin Foto';this.src='img/propiedad-no-imagen.jpg'" src="img/propiedad-no-imagen.jpg">
+			  </a> 
+              <div class="caption">
+                <h4>Bs {precio}</h4>
+                <span class="label label-info">{tipo_inmueble} en {tipo_negocio}</span> 
+                <div title="{ciudad1}, {urbanizacion1}" style="OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; OUTLINE-WIDTH: 0px !important; MARGIN-TOP: 5px">
+                  {ciudad}, {urbanizacion} 
+                </div>
+                {habitaciones} Hab. {banos} Bañ. {estacionamientos} Est. 
+                <p style="MARGIN-TOP: 10px"><a href="#" class="btn btn-primary btn-small">Detalle</a></p>
+              </div>
+            </div>
+            <!-- END Panel RowComponents -->
+            <!-- BEGIN Panel RowCloseTag --></li>
+          </ul>
+          <!-- END Panel RowCloseTag --><!-- END Row -->
+          <!-- BEGIN NoRecords -->
+          <div>
+            No hay ofertas de momento 
+          </div>
+          <!-- END NoRecords -->
+        </div>
+      </div>
+      <!-- END Grid vw_propiedades_caracas -->
+    </div>
+  </div>
+  <div id="filtro" style="DISPLAY: none">
+    <div style="white-space:nowrap">Caracas - Baruta / El Hatillo</div>
+	2 Habitaciones<br />
+	1 Baño<br />
+	1 Puesto<br />
+	<button class="btn btn-small btn-success" type="button">Modificar</button>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(function(){
+                $('#zona').typeahead({
+                    source: function (query, process) {
+                        return $.get('/services/zonas.php', { query: query }, function (data) {
+                            return process(data.options);
+                        });
+                    },
+                        minLength:3
+                });
+                $(".dropdown-menu li a").click(function(){
+                  
+              $(this).parent().parent().parent().find(".btn:first-child").html($(this).text()+' <span class="caret"></span>');
+              $(this).parent().parent().parent().find(".btn:first-child").val($(this).text());
+
+           });
+
+           $("im2g").error(function () {
+                    $(this).attr("src", "img/propiedad-no-imagen.jpg");
+            });
+
+            $('a[rel=popover]').popover({
+                html: 'true',
+                    placement: 'bottom',
+                    content : function() {
+                    return $("#"+$(this).attr("data-content-id")).html();
+                    }
+            })
+    });
+</script>
+</div>
+</body>
+</html>

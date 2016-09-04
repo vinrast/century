@@ -1,0 +1,417 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>CENTURY 21 Bricks Caracas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+          .modal { overflow: visible; }
+          .modal-body { overflow-y: visible; }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar">&nbsp;</span> <span class="icon-bar">&nbsp;</span> <span class="icon-bar">&nbsp;</span></button> <a class="brand" style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px"><img src="img/logo-small.png"></a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/">Inicio</a> 
+          <li><a href="ofrecer.php">Ofrecer Inmueble</a> 
+          <li><a href="nosotros.php">Nosotros</a> 
+          <li><a href="contacto.php">Contacto</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+<div class="container">
+  <!-- BEGIN Grid vw_propiedades_caracas -->
+  <div class="row">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="nav-collapse collapse navbar-responsive-collapse">
+            <ul class="nav">
+              <li><a href="#" rel="popover" data-content-id="filtro">Filtro de Búsqueda</a> </li>
+ 
+              <li class="divider-vertical"></li>
+            </ul>
+            <!-- BEGIN Navigator Navigator1 -->
+            <!-- BEGIN Page_Parameter --><input type="hidden" value="{Value}" name="{Name}"><!-- END Page_Parameter -->
+            <div class="pagination nav" style="MARGIN: 5px auto">
+              <ul>
+                <!-- BEGIN First_On -->
+                <li><a href="{First_URL}">«</a><!-- END First_On -->
+                <!-- BEGIN First_Off -->
+                <li class="disabled"><a href="#">«</a><!-- END First_Off -->
+                <!-- BEGIN Prev_On -->
+                <li><a href="{Prev_URL}">‹</a> <!-- END Prev_On -->
+                <!-- BEGIN Prev_Off -->
+                <li class="disabled"><a href="#">‹</a> <!-- END Prev_Off -->
+                <!-- BEGIN Pages -->
+                <!-- BEGIN Page_On -->
+                <li><a href="{Page_URL}">{Page_Number}</a> <!-- END Page_On -->
+                <!-- BEGIN Page_Off -->
+                <li class="active"><a href="#">{Page_Number}</a> <!-- END Page_Off --><!-- END Pages -->
+                <li class="active"><a href="#">de &nbsp;{Total_Pages}</a> 
+                <!-- BEGIN Next_On -->
+                <li><a href="{Next_URL}">›</a> <!-- END Next_On -->
+                <!-- BEGIN Next_Off -->
+                <li class="disabled"><a href="#">›</a> <!-- END Next_Off -->
+                <!-- BEGIN Last_On -->
+                <li><a href="{Last_URL}">»</a><!-- END Last_On -->
+                <!-- BEGIN Last_Off -->
+                <li class="disabled"><a href="#">»</a><!-- END Last_Off --></li>
+              </ul>
+            </div>
+            <!-- END Navigator Navigator1 -->
+            <ul class="nav pull-right">
+              <li class="divider-vertical">
+              <li class="dropdown" data-toggle-id="orden" data-toggle-show-text="true" data-toggle-autopostback="true"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Más reciente <span class="caret">&nbsp;</span></a> 
+              <ul class="dropdown-menu">
+                <li><a href="#" value="id_mls DESC">Más reciente</a> </li>
+ 
+                <li class="divider">
+                <li><a href="#" value="precio DESC">Mayor Precio</a> 
+                <li><a href="#" value="precio ASC">Menor Precio</a> </li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.nav-collapse -->
+        </div>
+      </div>
+      <!-- /navbar-inner -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12" style="MARGIN-LEFT: 15px">
+      <div class="row-fluid">
+        <!-- BEGIN Row -->
+        <!-- BEGIN Panel RowOpenTag -->
+        <ul class="thumbnails">
+          <!-- END Panel RowOpenTag -->
+          <!-- BEGIN Panel RowComponents -->
+          <li class="span2">
+          <div class="thumbnail" style="MIN-HEIGHT: 307px">
+<a href="#"><img onerror="this.alt='Sin Foto';this.src='img/propiedad-no-imagen.jpg'" onload="if(this.alt!='Sin Foto'){this.src='http://img.century21.com.ve/getmedia.asp?id={media}'}" style="HEIGHT: 120px; WIDTH: 160px" alt="300x200" src="img/propiedad-no-imagen.jpg"></a> 
+            <div class="caption">
+              <h4>Bs {precio}</h4>
+              <span class="label label-info">{tipo_inmueble} en {tipo_negocio}</span> 
+              <div title="{ciudad1}" style="OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; OUTLINE-WIDTH: 0px !important; MARGIN-TOP: 5px">
+                {ciudad} 
+              </div>
+ 
+              <div title="{urbanizacion1}" style="OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; OUTLINE-WIDTH: 0px !important">
+                {urbanizacion} 
+              </div>
+              {habitaciones} Hab. {banos} Bañ. {estacionamientos} Est. 
+              <p style="MARGIN-TOP: 10px"><a href="inmueble.php?p={lblIdMls}" class="btn btn-primary btn-small">Detalle</a></p>
+            </div>
+          </div>
+          <!-- END Panel RowComponents -->
+          <!-- BEGIN Panel RowCloseTag --></li>
+        </ul>
+        <!-- END Panel RowCloseTag --><!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <div>
+          No hay ofertas de momento 
+        </div>
+        <!-- END NoRecords -->
+      </div>
+    </div>
+    <!-- END Grid vw_propiedades_caracas -->
+  </div>
+</div>
+<div id="filtro" style="DISPLAY: none">
+  <div style="WHITE-SPACE: nowrap">
+    {lblTipo} 
+  </div>
+  <div style="WHITE-SPACE: nowrap">
+    {lblZona} 
+  </div>
+  {lblHab} {lblBanos} {lblPuestos} 
+  <div style="WHITE-SPACE: nowrap">
+    {lblMetrosConst} 
+  </div>
+  <div style="WHITE-SPACE: nowrap">
+    {lblMetrosTerr} 
+  </div>
+  <div style="WHITE-SPACE: nowrap">
+    {lblPrecio} 
+  </div>
+  <div class="pull-right" style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+<a href="#myModal" onclick="$('a[rel=popover]').popover('hide')" role="button" class="btn btn-small btn-success" data-toggle="modal">Modificar</a> 
+  </div>
+</div>
+<div role="dialog" tabindex="-1" aria-hidden="true" id="myModal" class="modal hide fade" aria-labelledby="myModalLabel">
+  <div class="modal-header">
+    <button aria-hidden="true" class="close" data-dismiss="modal">×</button> 
+    <h3 id="myModalLabel">Búsqueda de propiedades</h3>
+  </div>
+  <div class="modal-body">
+    <form id="Buscador" class="form-horizontal" method="get" name="{HTMLFormName}" action="{Action}">
+      <input type="hidden" id="tipoInmueble" value="{hdnTipoInmueble}" name="tipo_inmueble"><input type="hidden" value="{hdnTipoNegocio}" id="tipoNegocio" name="tipo_negocio"><input type="hidden" value="{hdnHabitaciones}" name="habitaciones"><input type="hidden" value="{hdnBanos}" name="banos"><input type="hidden" value="{hdnEstacionamientos}" name="estacionamientos"><input type="hidden" value="{hdnPage}" name="vw_propiedades_caracasPage"><input id="orden" type="hidden" value="{hdnOrden}" name="orden">
+      <div class="control-group">
+        Generales:<br>
+        <div id="negocio" class="btn-group" data-toggle="buttons-radio" data-toggle-name="tipo_negocio">
+          <button class="btn btn-warning" value="Venta">Comprar</button><button class="btn btn-warning" value="Alquiler">Alquilar</button> 
+        </div>
+        <div id="tipo" class="btn-group" data-toggle-name="tipo_inmueble">
+<a href="#" class="btn dropdown-toggle" data-toggle="dropdown">Apartamento <span class="caret">&nbsp;</span></a> 
+          <ul class="dropdown-menu">
+            <!-- BEGIN Grid vw_tipos_inmuebles -->
+            <!-- BEGIN Row -->
+            <li><a href="#" tabindex="-1" value="{tipo_inmueble1}">{tipo_inmueble}</a> <!-- END Row --><!-- END Grid vw_tipos_inmuebles --></li>
+          </ul>
+        </div>
+        <input id="zona" style="HEIGHT: 30px; MARGIN-LEFT: 5px" value="{txtZona}" name="zona" autocomplete="off" data-provide="typeahead" placeholder="Zona / Urbanización">
+      </div>
+      <div class="control-group">
+        Características:<br>
+        <div id="habitaciones" class="btn-group" data-toggle-name="habitaciones" data-toggle-sufix="Habitacion(es)" data-toggle-label="Habitaciones">
+<a href="#" class="btn dropdown-toggle" data-toggle="dropdown">Habitaciones <span class="caret">&nbsp;</span></a> 
+          <ul class="dropdown-menu">
+            <li><a href="#" tabindex="-1" value="1">1 Habitación</a> 
+            <li><a href="#" tabindex="-1" value="2">2 Habitaciones</a> 
+            <li><a href="#" tabindex="-1" value="3">3 Habitaciones</a> 
+            <li><a href="#" tabindex="-1" value="4">4 Habitaciones</a> 
+            <li><a href="#" tabindex="-1" value="5">5 Habitaciones</a> </li>
+ 
+            <li class="divider">
+            <li><a href="#" tabindex="-1" value="">No usar filtro</a> </li>
+          </ul>
+        </div>
+        <div id="banos" class="btn-group" data-toggle-name="banos" data-toggle-sufix="Baño(s)" data-toggle-label="Baños">
+<a href="#" class="btn dropdown-toggle" data-toggle="dropdown">Baños <span class="caret">&nbsp;</span></a> 
+          <ul class="dropdown-menu">
+            <li><a href="#" tabindex="-1" value="1">1 Baño</a> 
+            <li><a href="#" tabindex="-1" value="2">2 Baños</a> 
+            <li><a href="#" tabindex="-1" value="3">3 Baños</a> 
+            <li><a href="#" tabindex="-1" value="4">4 Baños</a> </li>
+ 
+            <li class="divider">
+            <li><a href="#" tabindex="-1" value="">No usar filtro</a> </li>
+          </ul>
+        </div>
+        <div id="estacionamientos" class="btn-group" data-toggle-name="estacionamientos" data-toggle-sufix="Puesto(s)" data-toggle-label="Estacionamiento">
+<a href="#" class="btn dropdown-toggle" data-toggle="dropdown">Estacionamiento <span class="caret">&nbsp;</span></a> 
+          <ul class="dropdown-menu">
+            <li><a href="#" tabindex="-1" value="1">1 Puesto</a> 
+            <li><a href="#" tabindex="-1" value="2">2 Puestos</a> 
+            <li><a href="#" tabindex="-1" value="3">3 Puestos</a> </li>
+ 
+            <li class="divider">
+            <li><a href="#" tabindex="-1" value="">No usar filtro</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="row-fluid">
+          <div class="span6">
+            Metros Contrucción:<br>
+            <div class="input-append">
+              <input id="appendedInput" class="input-small" style="HEIGHT: 30px" value="{txtMetrosc1}" name="metros_construccion_1" placeholder="Min"><span class="add-on">m²</span> 
+            </div>
+            - 
+            <div class="input-append">
+              <input id="appendedInput" class="input-small" style="HEIGHT: 30px" value="{txtMetrosc2}" name="metros_construccion_2" placeholder="Máx"><span class="add-on">m²</span> 
+            </div>
+          </div>
+          <div class="span6">
+            Metros Terreno:<br>
+            <div class="input-append">
+              <input id="appendedInput" class="input-small" style="HEIGHT: 30px" value="{txtMetrost1}" name="metros_terreno_1" placeholder="Min"><span class="add-on">m²</span> 
+            </div>
+            - 
+            <div class="input-append">
+              <input id="appendedInput" class="input-small" style="HEIGHT: 30px" value="{txtMetrost2}" name="metros_terreno_2" placeholder="Máx"><span class="add-on">m²</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="control-group">
+        Rango de Precio:<br>
+        <div class="input-prepend">
+          <span class="add-on">Bs.</span> <input class="input-medium money" style="HEIGHT: 30px; TEXT-ALIGN: right" value="{txtPrecio1}" name="precio_1" id="precio_1" placeholder="Min">
+        </div>
+        - 
+        <div class="input-prepend">
+          <span class="add-on">Bs.</span> <input class="input-medium money" style="HEIGHT: 30px; TEXT-ALIGN: right" value="{txtPrecio2}" name="precio_2" id="precio_2" placeholder="Máx">
+        </div>
+      </div>
+	  <div class="control-group">
+		<div class="checkbox">
+		    <label>
+		      <input type="checkbox" id="comercial" {chkComercial} name="comercial" value="1"> Comercial Industrial
+		    </label>
+		  </div>
+	  </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button aria-hidden="true" class="btn" data-dismiss="modal">Cerrar</button><button aria-hidden="true" id="buscador-submit" class="btn btn-primary" data-dismiss="modal">Buscar</button> 
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/jquery.numeric.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+function replaceAll(string, find, replace) {
+  return string.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+}
+
+function escapeRegExp(string) {
+    return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}
+
+$(function() {
+
+    $('#zona').typeahead({
+        source: function(query, process) {
+            return $.get('/services/zonas.php', {
+                query: query
+            }, function(data) {
+                return process(data.options);
+            });
+        },
+        minLength: 3
+    });
+
+    $("#buscador-submit").click(function() {
+        $('.money').each(function() {
+            $(this).data('mask').remove()
+        })
+        $("#Buscador").submit()
+    })
+
+    $(".numeric").numeric({
+        decimal: false
+    })
+
+    $('.money').mask('000.000.000.000.000', {
+        reverse: true
+    });
+
+    $('a[rel=popover]').popover({
+        html: 'true',
+        placement: 'bottom',
+        title: 'Búsqueda',
+        content: function() {
+            return $("#" + $(this).attr("data-content-id")).html();
+        }
+    });
+
+	$("#Buscador").on('submit', function(){
+		
+		if($('#comercial').attr('checked') =='checked')
+		{
+			$('#tipoInmueble').val('');
+			$('#tipoNegocio').val('');
+		}
+
+		$('#precio_1').val(replaceAll($('#precio_1').val(),'.',''));
+		$('#precio_2').val(replaceAll($('#precio_2').val(),'.',''));
+	
+	});
+
+    $(".btn-group[data-toggle-name], .btn-group[data-toggle-id], .dropdown[data-toggle-name], .dropdown[data-toggle-id]").each(function() {
+
+        var group = $(this);
+        var form = group.parents('form').eq(0);
+        var name = group.attr('data-toggle-name');
+        var hidden = "";
+        if (name != undefined & name != "")
+            hidden = $('input[name="' + name + '"]', form);
+        else {
+            name = group.attr('data-toggle-id');
+            hidden = $('input[id="' + name + '"]');
+            form = hidden.parents('form').eq(0);
+        }
+
+        $('button', group).each(function(index) {
+
+            var button = $(this);
+
+            button.click(function() {
+                hidden.val($(this).val());
+            });
+
+            if (button.val() == hidden.val()) {
+                button.addClass('active');
+            }
+
+        });
+
+        $(".dropdown-menu li a", group).each(function() {
+
+            var item = $(this);
+            var toggle = group.find('.dropdown-toggle');
+            var label = group.attr('data-toggle-label');
+            var sufix = group.attr('data-toggle-sufix');
+            sufix = (sufix != undefined) ? sufix : '';
+            var toogleMode = group.attr('data-toggle-show-text');
+            toogleMode = (toogleMode != "") ? eval("toogleMode=" + toogleMode) : false;
+            var autopostback = group.attr('data-toggle-autopostback');
+            autopostback = (autopostback != "") ? eval("autopostback=" + autopostback) : false;
+
+            if (item.attr('value') == hidden.val() & hidden.val() != "") {
+
+                item.parent().addClass("disabled");
+
+                if (!toogleMode) {
+                    if (hidden.val() != "")
+                        toggle.html(hidden.val() + ' ' + sufix + ' <span class="caret"></span>');
+                    else
+                        toggle.html(label + ' <span class="caret"></span>');
+                } else {
+                    toggle.html($(this).html() + ' <span class="caret"></span>');
+                }
+            } else {
+                item.click(function() {
+                    hidden.val($(this).attr('value'));
+                    if (!toogleMode) {
+                        if (hidden.val() != "")
+                            toggle.html(hidden.val() + ' ' + sufix + ' <span class="caret"></span>');
+                        else
+                            toggle.html(label + ' <span class="caret"></span>');
+                    } else {
+                        toggle.html($(this).html() + ' <span class="caret"></span>');
+                    }
+
+                    if (autopostback) {
+                        form.submit();
+                    }
+
+                });
+            }
+
+        });
+
+    });
+});
+</script>
+</body>
+</html>

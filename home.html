@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CENTURY 21 Bricks Caracas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet"><style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+	  padding:115px 0 40px 0;
+      color: #5a5a5a;
+	  background: url(img/slides/caracas.jpg) top center;
+		background-repeat: no-repeat;
+		background-size: auto 400px;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+	/* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+	  body 
+	  {
+		background-size: auto 280px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+	  body {
+		background-size: auto 200px;
+		background-position:center 50px;
+    	}
+    }
+
+	.hero-yellow
+	{
+		background-color: rgba(227,190,0,0.5);
+		border: 1px solid #E3BE00;
+		color:white;
+		padding:20px 40px !important;
+
+	}
+	
+	.hero-yellow h2
+	{
+		text-shadow: 1px 1px 0 #000;
+	}
+
+	</style>
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="ofrecer.php">Ofrecer Inmueble</a></li>
+                <li><a href="nosotros.php">Nosotros</a></li>
+				<li><a href="contacto.php">Contacto</a></li>
+				<!--
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miembros <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Registro</a></li>
+                    <li><a href="#">Iniciar Sesion</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Ayuda</a></li>
+                  </ul>
+                </li>
+				-->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+	
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+				<img src="img/logo-home.png" />
+			</div>
+			<div class="span7">
+				<div class="hero-unit hero-yellow">
+	        		<h2>Busca inmuebles en la Gran Caracas</h2>
+	        		<form class="form-inline" id="buscador" action="propiedades.php" method="GET">
+						<input type="hidden" value="Apartamento" name="tipo_inmueble" />
+						<input type="hidden" value="Venta" name="tipo_negocio" />
+						<input type="hidden" name="habitaciones" />
+						<input type="hidden" name="banos" />
+						<input type="hidden" name="estacionamientos" />
+						<div style="padding:10px 0">
+
+							<div data-toggle-name="tipo_negocio" class="btn-group" id="negocio" data-toggle="buttons-radio" >
+							  <button type="button" value="Venta" class="btn btn-warning">Comprar</button>
+							  <button type="button" value="Alquiler" class="btn btn-warning">Alquilar</button>
+							</div>
+
+							<div data-toggle-name="tipo_inmueble" id="tipo" class="btn-group">
+							  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							    Apartamento
+							    <span class="caret"></span>
+							  </a>
+							  <ul class="dropdown-menu">
+<!-- BEGIN Grid vw_tipos_inmuebles -->
+ <!-- BEGIN Row -->
+ 								<li><a tabindex="-1" value="{tipo_inmueble1}" href="#">{tipo_inmueble}</a></li>
+ <!-- END Row -->
+<!-- END Grid vw_tipos_inmuebles -->
+							  </ul>
+							</div>
+						</div>
+
+						<input type="text" id="zona" style="margin-right:5px" name="zona" autocomplete="off" data-provide="typeahead" placeholder="Zona / Urbanización">
+						
+						<div data-toggle-name="habitaciones" data-toggle-sufix="Hab." data-toggle-label="Hab." id="habitaciones" class="btn-group">
+						  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						  	Hab.
+						    <span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu">
+							<li><a tabindex="-1" value="1" href="#">1 Habitación.</a></li>
+							<li><a tabindex="-1" value="2" href="#">2 Habitaciones.</a></li>
+							<li><a tabindex="-1" value="3" href="#">3 Habitaciones.</a></li>
+							<li><a tabindex="-1" value="4" href="#">4 Habitaciones.</a></li>
+							<li><a tabindex="-1" value="5" href="#">5 Habitaciones.</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" value="" href="#">No usar filtro</a></li>
+						  </ul>
+						</div>
+						<div id="banos" data-toggle-name="banos" data-toggle-sufix="Baño(s)" data-toggle-label="Baños" class="btn-group">
+						  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						  	Baños
+						    <span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu">
+						    <li><a tabindex="-1" value="1" href="#">1 Baño</a></li>
+							<li><a tabindex="-1" value="2" href="#">2 Baños</a></li>
+							<li><a tabindex="-1" value="3" href="#">3 Baños</a></li>
+							<li><a tabindex="-1" value="4" href="#">4 Baños</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" value="" href="#">No usar filtro</a></li>
+						  </ul>
+						</div>
+						<div id="estacionamientos" data-toggle-name="estacionamientos" data-toggle-sufix="Puesto(s)" data-toggle-label="Estacionamiento" class="btn-group">
+						  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						  	Estacionamiento
+						    <span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu">
+							<li><a tabindex="-1" value="1" href="#">1 Puesto</a></li>
+							<li><a tabindex="-1" value="2" href="#">2 Puestos</a></li>
+							<li><a tabindex="-1" value="3" href="#">3 Puestos</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" value="" href="#">No usar filtro</a></li>
+						  </ul>
+						</div>
+					</form>
+	        		<p><a href="#" id="btn_buscar" class="btn btn-inverse btn-large"><i class="icon-search icon-white"></i> Buscar</a></p>
+      			</div>			
+			</div>
+		</div>
+		<div class="row" style="margin-top:20px">
+			<div class="span4">
+				<h2>Destacadas</h2>
+<!-- BEGIN Grid ofertas_propiedades -->
+  <!-- BEGIN Row -->
+				<div class="media">
+					<a class="pull-left thumbnail" href="inmueble.php?p={codigo}">
+						<img class="media-object" alt="96x72" style="width: 96px; height: 72px;" src="http://img.century21.com.ve/getmedia.asp?THUMB=TRUE&id={media}">
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">Bs. {precio}</h4>
+						<span class="label label-info">{tipo_inmueble} en {tipo_negocio}</span><br />
+						{ciudad}, {urbanizacion} <br />
+						{habitaciones} Habitaciones, {banos} Baños, {estacionamientos} Puestos
+					</div>
+				</div>
+ <!-- END Row -->
+ <!-- BEGIN Separator -->
+  				<hr />
+ <!-- END Separator -->
+ <!-- BEGIN NoRecords -->
+  				<div>No hay ofertas de momento</div>
+ <!-- END NoRecords -->
+<!-- END Grid ofertas_propiedades -->
+			</div>
+			<div class="span4">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				      <a target="_blank" href="http://rbenitez.c21-email.com/media/id/1273770/"><img src="img/banners/Slide1.JPG" alt="..."></a>
+				    </div>
+				    <div class="item">
+				      <img src="img/banners/Slide2.JPG" alt="...">
+				    </div>
+				    <div class="item">
+				      <img src="img/banners/Slide3.JPG" alt="...">
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="span4">
+				<div class="row">
+					<div class="span2">
+						<a href="propiedades.php?tipo_inmueble=Apartamento&tipo_negocio=Venta&precio_1=65000000&precio_2=" class="thumbnail">
+		                	<img alt="160x120" src="img/banners/century21-luxury.jpg">
+		              	</a>
+					</div>
+					<div class="span2">
+						<a href="propiedades.php?comercial=1" class="thumbnail">
+		                	<img alt="160x120" src="img/banners/century21-comercialindustrial.jpg">
+		              	</a>
+					</div>
+				</div>
+				<div class="row" style="margin-top:20px">
+					<div class="span4">
+						<a href="http://www.ricardobenitez.com/" target="_blank" class="thumbnail">
+		                	<img alt="160x120" src="img/banners/ricardobenitez.com.jpg">
+		              	</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<hr />
+
+		<footer>
+    	    <p>© CENTURY 21 Bricks Caracas 2013 - Desarrollado por <a href="http://www.clicksolutions.com.ve">Click Solutions</a></p> 
+		</footer>
+
+	</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+        $(function(){
+			$('#zona').typeahead({
+			    source: function (query, process) {
+			        return $.get('/services/zonas.php', { query: query }, function (data) {
+			            return process(data.options);
+			        });
+			    },
+				minLength:3
+			});
+
+
+			$(".btn-group[data-toggle-name], .btn-group[data-toggle-id], .dropdown[data-toggle-name], .dropdown[data-toggle-id]").each(function() {
+
+		        var group = $(this);
+		        var form = group.parents('form').eq(0);
+		        var name = group.attr('data-toggle-name');
+				var hidden = "";
+				if(name!=undefined & name!="")
+					hidden = $('input[name="' + name + '"]', form);
+				else
+				{
+					name = group.attr('data-toggle-id');
+					hidden = $('input[id="' + name + '"]');
+					form = hidden.parents('form').eq(0);
+				}
+
+		        $('button', group).each(function(index) {
+
+		            var button = $(this);
+
+		            button.click(function() {
+		                hidden.val($(this).val());
+		            });
+
+		            if (button.val() == hidden.val()) {
+		                button.addClass('active');
+		            }
+
+		        });
+
+				$(".dropdown-menu li a",group).each(function(){
+
+					var item = $(this);
+					var toggle = group.find('.dropdown-toggle');
+					var label = group.attr('data-toggle-label');
+					var sufix = group.attr('data-toggle-sufix');
+					sufix = (sufix!=undefined)?sufix:'';
+					var toogleMode = group.attr('data-toggle-show-text');
+					toogleMode = (toogleMode!="")?eval("toogleMode="+toogleMode):false;
+					var autopostback = group.attr('data-toggle-autopostback');
+					autopostback = (autopostback!="")?eval("autopostback="+autopostback):false;
+
+					if(item.attr('value')==hidden.val()&hidden.val()!=""){
+
+						item.parent().addClass("disabled");
+
+						if(!toogleMode){
+							if(hidden.val()!="")
+								toggle.html(hidden.val()+' '+sufix+' <span class="caret"></span>');
+							else
+								toggle.html(label+' <span class="caret"></span>');
+						}
+						else
+						{
+							toggle.html($(this).html()+' <span class="caret"></span>');
+						}
+					}
+					else
+					{
+						item.click(function() {
+			                hidden.val($(this).attr('value'));
+							if(!toogleMode){
+								if(hidden.val()!="")
+									toggle.html(hidden.val()+' '+sufix+' <span class="caret"></span>');
+								else
+									toggle.html(label+' <span class="caret"></span>');
+							}
+							else
+							{
+								toggle.html($(this).html()+' <span class="caret"></span>');
+							}
+
+							if(autopostback)
+							{
+								form.submit();
+							}
+
+			            });
+					}
+
+				});
+
+		    });
+
+
+			$("#btn_buscar").click(function(){$("#buscador").submit()})
+        });
+    </script>
+
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=jmlaya"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 3,
+	  'services':'facebook,twitter,more'
+    }   
+  });
+</script>
+<!-- AddThis Smart Layers END -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=34037312192";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>
